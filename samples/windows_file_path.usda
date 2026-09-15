@@ -1,0 +1,7 @@
+#usda 1.0
+
+def "world" (
+    prepend references = @C:/test/abcd.usda@
+)
+{
+}

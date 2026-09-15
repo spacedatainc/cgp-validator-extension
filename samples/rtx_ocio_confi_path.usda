@@ -1,0 +1,22 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary renderSettings = {
+            double "rtx:directLighting:sampledLighting:maxRayUnexposedIntensity" = 6399.9990234375
+            double "rtx:indirectDiffuse:maxRayUnexposedIntensity" = 6399.9990234375
+            double "rtx:pathtracing:fireflyFilter:maxPerEmissiveUnexposedIntensity" = 3199.99951171875
+            double "rtx:pathtracing:fireflyFilter:maxUnexposedIntensityPerSample" = 3199.99951171875
+            double "rtx:pathtracing:fireflyFilter:maxUnexposedIntensityPerSampleDiffuse" = 3199.99951171875
+            double "rtx:post:lensFlares:flareScale" = 0.075
+            token "rtx:post:tonemap:ocio:cfgFilePath" = "/home/ubuntu/.cache/packman/chk/kit-kernel/109.0.3+production.263267.62477c11.gl.manylinux_2_35_x86_64.release/rendering-data/runtime/RtxSensorMaterialMap.csv"
+            bool "rtx:post:tonemap:ocio:enabled" = 1
+            double "rtx:raytracing:inscattering:maxRTSampleUnexposedIntensity" = 204799.96875
+            float3 "rtx:sceneDb:ambientLightColor" = (0, 0, 0)
+            double "rtx:translucency:maxRayUnexposedIntensity" = 19199.998046875
+        }
+    }
+)
+
+def Xform "World"
+{
+}

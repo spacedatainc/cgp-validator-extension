@@ -1,0 +1,10 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    custom asset assetPath = @file:///C:/workspace/test_asset.usd@
+}
+

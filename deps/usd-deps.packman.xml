@@ -1,0 +1,8 @@
+<project toolsVersion="5.6">
+  <dependency name="usd-release" linkPath="../_build/usd-deps/usd">
+      <package name="usd.py312.manylinux_2_35_x86_64.stock.release" version="0.25.02.kit.8-gl.16788+c1c423f2" />
+  </dependency>
+  <dependency name="python" linkPath="../_build/usd-deps/python">
+    <package name="python" version="3.12.12+nv3-manylinux_2_35_x86_64" />
+  </dependency>
+</project>

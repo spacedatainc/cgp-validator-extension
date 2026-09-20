@@ -1,6 +1,9 @@
 # CGP Validator Extension [spacedata.cgp_validator_extension]
 
-このプロジェクトは、USD プラグイン `CGPValidator` で登録された `UsdValidator` を、Omniverse の `AssetValidator` で利用できるようにするための extension です。
+このプロジェクトは、USD プラグイン `CGPValidators` で登録された `UsdValidator` を、Omniverse の `AssetValidator` で利用できるようにするための extension です。
+
+CGP Validators:
+https://github.com/spacedatainc/cgp-validators
 
 `CGPValidator` 自体が実際の検査ロジックを持っており、この extension はその validator を OpenUSD / Omniverse 側から認識・利用可能にするための配線役です。つまり、どんなチェックが行われるかは `CGPValidator` の実装次第であり、この extension はその登録と配布を担います。
 

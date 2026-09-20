@@ -25,7 +25,16 @@ set(CMAKE_INSTALL_BINDIR "${CMAKE_INSTALL_PREFIX}/bin")
 set(CMAKE_INSTALL_LIBDIR "${CMAKE_INSTALL_PREFIX}/lib")
 set(CMAKE_INSTALL_INCLUDEDIR "${CMAKE_INSTALL_PREFIX}/include")
 
-add_subdirectory(src/usd-plugins/cgpValidator)
+# Set up Omniverse extension build environments.
+set(USD_ROOT "${CMAKE_CURRENT_LIST_DIR}/_build/usd-deps/usd")
+set(PYTHON_ROOT "${CMAKE_CURRENT_LIST_DIR}/_build/usd-deps/python")
+set(Python3_ROOT_DIR "${PYTHON_ROOT}")
+set(Python3_EXECUTABLE "${PYTHON_ROOT}/bin/python3")
+set(Python3_INCLUDE_DIR "${PYTHON_ROOT}/include/python3.12")
+set(Python3_LIBRARY "${PYTHON_ROOT}/lib/libpython3.12.so")
+set(Python3_LIBRARY_RELEASE "${Python3_LIBRARY}")
+set(Python3_LIBRARY_DEBUG "${Python3_LIBRARY}")
+add_subdirectory(src/usd-plugins/cgp-validators)
 
 install(DIRECTORY "src/kit-extension/exts/spacedata.cgp_validator_extension/"
     DESTINATION ${CMAKE_INSTALL_PREFIX}

@@ -1,0 +1,3 @@
+[submodule "src/usd-plugins/cgp-validators"]
+	path = src/usd-plugins/cgp-validators
+	url = https://github.com/spacedatainc/cgp-validators.git

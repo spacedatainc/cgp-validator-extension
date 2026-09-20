@@ -39,3 +39,10 @@ add_subdirectory(src/usd-plugins/cgp-validators)
 install(DIRECTORY "src/kit-extension/exts/spacedata.cgp_validator_extension/"
     DESTINATION ${CMAKE_INSTALL_PREFIX}
 )
+
+install(FILES "README.md"
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/docs
+)
+install(DIRECTORY "data/"
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/data
+)

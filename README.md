@@ -1,4 +1,4 @@
-# CGP Validator Extension
+# CGP Validator Extension [spacedata.cgp_validator_extension]
 
 このプロジェクトは、USD プラグイン `CGPValidator` で登録された `UsdValidator` を、Omniverse の `AssetValidator` で利用できるようにするための extension です。
 
@@ -10,6 +10,8 @@
 - RTX の OCIO config パスが想定値と一致しているかの検出
 
 > 注意: このリポジトリは NVIDIA の OpenUSD Plugin Samples を参考にして作成されています。ベース構成やビルドの考え方はそのサンプルを踏まえていますが、実装と用途はこのプロジェクト向けに調整しています。
+
+![Screenshot](data/screenshot.png)
 
 ## 対応環境
 
